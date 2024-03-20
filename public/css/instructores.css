@@ -1,0 +1,17 @@
+.box-info-instructor{
+    margin: 60px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.box-info-instructor h3{
+    color: #445AFF !important;
+}
+
+
+.photo-instructor-box{
+    background: grey;
+    border-radius: 10px;
+    margin-top: -40px;
+    height: 135%;
+}

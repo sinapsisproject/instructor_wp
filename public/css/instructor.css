@@ -1,0 +1,26 @@
+.box-blue-instructor{
+    background: #445AFF;
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.box-white-description{
+    border-radius: 10px;
+    background: white;
+    padding: 42px;
+    color: black;
+}
+
+.box-img-instructor{
+    height: 520%;
+    background: grey;
+    border-radius: 10px;
+    margin-top: -250px;
+}
+
+.banner-courses-instructor{
+    background: #445AFF;
+    margin: 10px;
+    border-radius: 10px;
+}
