@@ -1,6 +1,6 @@
 
 <div class="col-12 text-center">
-    <h3 style="color: #445AFF;">Instructores</h3>
+    <h3 style="color: #445AFF;">Profesores</h3>
     <p>Lorem ipsum dolor sit amet consectetur. Dolor mi placerat ullamcorper amet tempor pharetra sodales eget leo. Dolor mi placerat ullamcorper amet tempor pharetra sodales eget leo. Risus.</p>
 </div>
 

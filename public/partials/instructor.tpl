@@ -16,12 +16,13 @@
         </div>
     </div>
 
-
 </div>
+
+<br>
 
 {if $cursos|count > 0}
 <br><br><br>
-<div class="banner-courses-instructor mt-5">
+<div class="banner-courses-instructor mt-5 mb-5">
 
     <div class="row">
         <div class="col-6 pt-4 pl-2">
@@ -66,5 +67,10 @@
 </div>
 
 {/if}
+
+<div class="col-12 text-center">
+    <a href="/instructores/"><button type="button"><i style="margin-left: 10px;" class="fa-solid fa-arrow-left"></i> Volver a profesores</button></a>
+</div>
+<br><br>
 
 
