@@ -10,7 +10,7 @@
             </div>
             <div class="col-12 d-block d-md-none mb-3">
                 <div class="img-profesor-instructor">
-                    <img src="http://local.sinapsis.cl/wp-content/uploads/2024/05/fabian.jpg" alt="">
+                    <img src="{$instructor->response->foto}" alt="">
                 </div>
             </div>
             <div class="col-12 box-white-description">
@@ -22,7 +22,7 @@
 
     <div class="col-12 col-md-4 d-none d-md-block">
         <div class="img-profesor-instructor">
-            <img src="http://local.sinapsis.cl/wp-content/uploads/2024/05/fabian.jpg" alt="">
+            <img src="{$instructor->response->foto}" alt="">
         </div>
     </div>
 
