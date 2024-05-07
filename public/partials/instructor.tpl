@@ -1,41 +1,50 @@
 <div class="row box-blue-instructor mt-5 mb-5">
 
-    <div class="col-8">
-        <h2 style="color: white;">{$instructor->response->nombre}</h2>
-        <p>{$instructor->response->especialidad}</p>
-        <p>+ 10 años de experiencia en Medicina interna</p>
-    </div>
-    
-    <div class="col-7 box-white-description shadow">
-        <p>{$instructor->response->descripcion}</p>
+    <div class="col-12 col-md-8 pe-md-5">
+
+        <div class="row">
+            <div class="col-12">
+                <h2 style="color: white;">{$instructor->response->nombre}</h2>
+                <p>{$instructor->response->especialidad}</p>
+                <p>{$instructor->response->cargo}</p>
+            </div>
+            <div class="col-12 d-block d-md-none mb-3">
+                <div class="img-profesor-instructor">
+                    <img src="http://local.sinapsis.cl/wp-content/uploads/2024/05/fabian.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 box-white-description">
+                <p>{$instructor->response->descripcion}</p>
+            </div>
+        </div>
+
     </div>
 
-    <div class="col-5" style="padding: 30px;">
-        <div class="box-img-instructor">
-
+    <div class="col-12 col-md-4 d-none d-md-block">
+        <div class="img-profesor-instructor">
+            <img src="http://local.sinapsis.cl/wp-content/uploads/2024/05/fabian.jpg" alt="">
         </div>
     </div>
 
 </div>
 
-<br>
 
 {if $cursos|count > 0}
-<br><br><br>
-<div class="banner-courses-instructor mt-5 mb-5">
+
+<div class="banner-courses-instructor mb-5">
 
     <div class="row">
-        <div class="col-6 pt-4 pl-2">
-            <h3 style="color: white; padding-left: 20px;">Descubre sus cursos</h3>
+        <div class="col-12 text-center text-md-start">
+            <h3 style="color: white;">Descubre sus cursos</h3>
         </div>
         <div class="col-6">
             <!-- <a href=""><button type="button">Ver todos los cursos</button></a> -->
         </div>
 
-        <div class="col-12" style="padding : 30px;">
+        <div class="col-12">
             <div class="row">
             {foreach $cursos as $curso}
-            <div class="col-4">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card shadow">
                     <div class="box-img-courses">
                         <div class="img-courses" style="background-image: url({$curso->imagen});"></div>
@@ -44,10 +53,10 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-6">
-                                <p><i class="fa-solid fa-users"></i> + {$curso->estudiantes} Estudiantes</p>
+                                <p class="text-course-data"><i class="fa-solid fa-users"></i> + {$curso->estudiantes} Estudiantes</p>
                             </div>
                             <div class="col-6">
-                                <p><i class="fa-regular fa-clock"></i> {$curso->duracion}</p>
+                                <p class="text-course-data"><i class="fa-regular fa-clock"></i> {$curso->duracion}</p>
                             </div>
                         </div>
                         

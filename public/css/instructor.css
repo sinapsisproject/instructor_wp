@@ -11,16 +11,29 @@
     padding: 42px;
     color: black;
 }
+.img-profesor-instructor img{
+    border-radius: 10px !important;
+}
 
-.box-img-instructor{
+/* .box-img-instructor{
     height: 520%;
     background: grey;
     border-radius: 10px;
     margin-top: -250px;
-}
+} */
 
 .banner-courses-instructor{
     background: #445AFF;
     margin: 10px;
     border-radius: 10px;
+    padding: 25px;
+}
+
+@media (max-width: 991px) {
+    .box-blue-instructor{
+        padding: 30px;
+    }
+    .box-white-description{
+        padding: 25px;
+    }
 }
