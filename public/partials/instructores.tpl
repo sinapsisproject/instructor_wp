@@ -1,7 +1,7 @@
 
 <div class="col-12 text-center">
     <h3 style="color: #445AFF;">Profesores</h3>
-    <p>Lorem ipsum dolor sit amet consectetur. Dolor mi placerat ullamcorper amet tempor pharetra sodales eget leo.Dolor mi placerat ullamcorper amet tempor pharetra sodales eget leo. Risus.</p>
+    <p>Todos nuestros profesores son egresados de las mejores universidades y cuentan con + 10 años de experiencia en diversas especialidades.</p>
 </div>
 
 {$c=0}
