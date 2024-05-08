@@ -24,7 +24,7 @@
                     <p>{$instructor->descripcion}</p>
                 </div>
                 <div class="col-12 mb-4">
-                    <a href="/instructor/?id={$instructor->id}"><button class="button_instructor" type="button">Descubre más sobre {$instructor->nombre} <i style="margin-left: 10px;" class="fa-solid fa-arrow-right"></i></button></a>
+                    <a href="/instructor/?id={$instructor->id}"><button class="button_instructor" type="button">Más sobre {$instructor->nombre} <i style="margin-left: 10px;" class="fa-solid fa-arrow-right"></i></button></a>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
                     <p>{$instructor->descripcion}</p>
                 </div>
                 <div class="col-12 mb-4">
-                    <a href="/instructor/?id={$instructor->id}"><button class="button_instructor" type="button">Descubre más sobre {$instructor->nombre} <i style="margin-left: 10px;" class="fa-solid fa-arrow-right"></i></button></a>
+                    <a href="/instructor/?id={$instructor->id}"><button class="button_instructor" type="button">Más sobre {$instructor->nombre} <i style="margin-left: 10px;" class="fa-solid fa-arrow-right"></i></button></a>
                 </div>
             </div>
         </div>
