@@ -9,9 +9,28 @@
 }
 
 
-.photo-instructor-box{
+/* .photo-instructor-box{
     background: grey;
     border-radius: 10px;
     margin-top: -40px;
     height: 135%;
+} */
+
+.photo-instructor-box{
+
+}
+
+
+@media (max-width: 991px) {
+   .box-info-instructor{
+        margin: 20px;
+   }
+   .box-info-instructor h3{
+        margin: 0px;
+        font-size: 24px;
+   }
+   .button_instructor{
+        font-size: 10px !important;
+        width: 100% !important;
+   }
 }

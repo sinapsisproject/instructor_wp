@@ -1,36 +1,37 @@
 
 <div class="col-12 text-center">
     <h3 style="color: #445AFF;">Profesores</h3>
-    <p>Lorem ipsum dolor sit amet consectetur. Dolor mi placerat ullamcorper amet tempor pharetra sodales eget leo. Dolor mi placerat ullamcorper amet tempor pharetra sodales eget leo. Risus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur. Dolor mi placerat ullamcorper amet tempor pharetra sodales eget leo.Dolor mi placerat ullamcorper amet tempor pharetra sodales eget leo. Risus.</p>
 </div>
 
 {$c=0}
 {foreach $instructores->response as $instructor}
 
 {if $c % 2 == 0}
-    <div class=" row mb-5 shadow box-info-instructor">
-        <div class="col-8">
+    <div class="row mb-5 shadow box-info-instructor">
+        <div class="col-12 col-md-8 ">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <h3>{$instructor->nombre}</h3>
                 </div>
-                <div class="col-6 text-end">
-                    Dr. en Hospital Lorem Ipsum
+                <div class="col-12 col-md-6 text-start text-md-end">
+                     {$instructor->cargo}
                 </div>
-                <div class="col-12">
-                    <p style="font-weight: bold;">+ 10 años de experiencia en el sector de la salud</p>
+                <div class="col-12 mt-3 mt-md-0">
+                    <p style="font-weight: bold;">{$instructor->especialidad}</p>
                 </div>
                 <div class="col-12 mb-4">
-                    <p>Lorem ipsum dolor sit amet consectetur. Dolor mi placerat ullamcorper amet tempor pharetra sodales eget leo. Risus.</p>
+                    <p>{$instructor->descripcion}</p>
                 </div>
-                <div class="col-12">
-                    <a href="/instructor/?id={$instructor->id}"><button type="button">Descubre más sobre Alena Saris <i style="margin-left: 10px;" class="fa-solid fa-arrow-right"></i></button></a>
+                <div class="col-12 mb-4">
+                    <a href="/instructor/?id={$instructor->id}"><button class="button_instructor" type="button">Descubre más sobre {$instructor->nombre} <i style="margin-left: 10px;" class="fa-solid fa-arrow-right"></i></button></a>
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <div class="photo-instructor-box">
-                <img src="" alt="">
+                <!-- <img src="{$instructor->foto}" alt=""> -->
+                <img src="{$instructor->foto}" alt="">
             </div>
         </div>
     </div>
@@ -39,28 +40,34 @@
 {if $c % 2 != 0}
 
 <div class=" row mb-5 shadow box-info-instructor">
-        <div class="col-4">
+        <div class="col-12 col-md-4 d-none d-md-block">
             <div class="photo-instructor-box">
-                <img src="" alt="">
+                <img src="{$instructor->foto}" alt="">
             </div>
         </div>
-        <div class="col-8">
+        <div class="col-12 col-md-8">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <h3>{$instructor->nombre}</h3>
                 </div>
-                <div class="col-6 text-end">
-                    Dr. en Hospital Lorem Ipsum
+                <div class="col-12 col-md-6 text-start text-md-end">
+                     {$instructor->cargo}
                 </div>
-                <div class="col-12">
-                    <p style="font-weight: bold;">+ 10 años de experiencia en el sector de la salud</p>
+                <div class="col-12 mt-3 mt-md-0">
+                    <p style="font-weight: bold;">{$instructor->especialidad}</p>
                 </div>
                 <div class="col-12 mb-4">
-                    <p>Lorem ipsum dolor sit amet consectetur. Dolor mi placerat ullamcorper amet tempor pharetra sodales eget leo. Risus.</p>
+                    <p>{$instructor->descripcion}</p>
                 </div>
-                <div class="col-12">
-                    <a href="/instructor/?id={$instructor->id}"><button type="button">Descubre más sobre Alena Saris <i style="margin-left: 10px;" class="fa-solid fa-arrow-right"></i></button></a>
+                <div class="col-12 mb-4">
+                    <a href="/instructor/?id={$instructor->id}"><button class="button_instructor" type="button">Descubre más sobre {$instructor->nombre} <i style="margin-left: 10px;" class="fa-solid fa-arrow-right"></i></button></a>
                 </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 d-block d-md-none">
+            <div class="photo-instructor-box">
+                <!-- <img src="{$instructor->foto}" alt=""> -->
+                <img src="{$instructor->foto}" alt="">
             </div>
         </div>
     </div>
