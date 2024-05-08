@@ -24,10 +24,12 @@
 @media (max-width: 991px) {
    .box-info-instructor{
         margin: 20px;
+        padding: 15px;
    }
    .box-info-instructor h3{
         margin: 0px;
         font-size: 22px;
+        margin-top: 10px;
    }
    .button_instructor{
         font-size: 10px !important;
