@@ -78,7 +78,7 @@
 {/if}
 
 <div class="col-12 text-center">
-    <a href="/instructores/"><button type="button"><i style="margin-left: 10px;" class="fa-solid fa-arrow-left"></i> Volver a profesores</button></a>
+    <a href="/profesores/"><button type="button"><i style="margin-left: 10px;" class="fa-solid fa-arrow-left"></i> Volver a profesores</button></a>
 </div>
 <br><br>
 
