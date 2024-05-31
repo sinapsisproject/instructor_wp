@@ -59,7 +59,7 @@
                 <div class="col-12 mb-4">
                     <p>{$instructor->descripcion}</p>
                 </div>
-                <div class="col-12 mb-4">
+                <div class="col-12 mb-4 text-end">
                     <a href="/instructor/?id={$instructor->id}"><button class="button_instructor" type="button">Más sobre {$instructor->nombre} <i style="margin-left: 10px;" class="fa-solid fa-arrow-right"></i></button></a>
                 </div>
             </div>
