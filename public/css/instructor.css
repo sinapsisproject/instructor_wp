@@ -1,14 +1,19 @@
 .box-blue-instructor{
-    background: #445AFF;
     color: white;
-    border-radius: 10px;
     padding: 40px;
+    
+}
+
+.box-traslate-instructor-blue{
+    height: 465px;
+    background: #445AFF;
+    border-radius: 10px;
 }
 
 .box-white-description{
     border-radius: 10px;
     background: white;
-    padding: 20px;
+    padding: 40px;
     color: black;
 }
 .img-profesor-instructor img{
@@ -24,7 +29,6 @@
 
 .banner-courses-instructor{
     background: #445AFF;
-    margin: 10px;
     border-radius: 10px;
     padding: 25px;
 }
@@ -36,4 +40,21 @@
     .box-white-description{
         padding: 25px;
     }
+    .box-traslate-instructor-blue{
+        height: auto;
+        background: #445AFF;
+        border-radius: 10px;
+    }
+    .description-instructor-mobile{
+        font-size: 14px;
+    }
+    .description-instructor-mobile i{
+        color: white !important;
+    }
+}
+
+
+.example{
+    background: red;
+    
 }

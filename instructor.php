@@ -17,13 +17,17 @@
 
     function ajax_enqueue_scripts_instructor() {
 
-        // wp_enqueue_script(
-        // 'courses-instructor',
-        // plugins_url( '/public/js/instructor.js', __FILE__ ), 
-        // array('jquery'),
-        // rand(0, 99),
-        // true
-        // );
+        if(basename(get_permalink()) == "instructor"){
+
+            wp_enqueue_script(
+            'js-instructor-sinapsis',
+            plugins_url( '/public/js/instructor.js', __FILE__ ), 
+            array('jquery'),
+            rand(0, 99),
+            true
+            );
+
+        }
 
         wp_enqueue_style( 
         'css-instructor-sinapsis',
@@ -38,15 +42,6 @@
         array(),
         rand(0, 99)
         );
-
-
-        // wp_localize_script(
-        //     'courses-profile',
-        //     'wp_ajax_sinapsis_profile',
-        //     array(
-        //       'ajax_url_courses_profile' => plugins_url( '/public/courses.php' , __FILE__ )
-        //     )
-        // );
 
     }
 
